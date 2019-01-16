@@ -10,7 +10,7 @@
    * 然后再安装twisted就成功了。附上文章：(https://www.cnblogs.com/espooky/p/5979920.html)
    * 再来安装：`pip install scrapy`,成功了:sob:
    * CD进入项目目录，然后终端执行：`scrapy startproject test`创建TEST项目，结果提示说文件没找到或已损坏
-   * 再次查问题，> 网上大神说是scrapy安装的默认路径要在/usr/bin里面，然而我没有找到，却在/usr/local/bin找到了
+   * > 网上大神说是scrapy安装的默认路径要在/usr/bin里面，然而我没有找到，却在/usr/local/bin找到了
    * 那么就终端输入命令：`sudo cp /usr/local/bin/scrapy /usr/bin/scrapy`来复制，提示无权限
    * 重启系统长按：command+r进入保护模式，打开窗口上方的菜单，找到终端输入：csrutil disable
    * 再次执行：`sudo cp /usr/local/bin/scrapy /usr/bin/scrapy`命令，成功了，再创建项目：`scrapy startproject test`，终于成功啦
